@@ -1,21 +1,13 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import type { AppProps } from "next/app";
-import BaseFooter from "../components/BaseFooter";
-import BaseNavigation from "../components/BaseNavigation";
+import Layout from "../components/BaseLayout";
 
-function MyApp({ Component, pageProps }: AppProps) {
+const App = ({ Component, pageProps }: AppProps) => {
   return (
-    <div className="d-flex flex-column">
-      <header>
-        <BaseNavigation />
-      </header>
-      <main className="flex-shrink-0">
-        <Component {...pageProps} />
-      </main>
-      <footer className="mt-auto py-5 bg-light">
-        <BaseFooter />
-      </footer>
-    </div>
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
   );
-}
-export default MyApp;
+};
+
+export default App;
