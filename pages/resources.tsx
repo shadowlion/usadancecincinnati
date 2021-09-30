@@ -4,13 +4,13 @@ import CardImg from "react-bootstrap/CardImg";
 
 const ResourcesPage = () => {
   return (
-    <div className="container py-5">
-      <h1 className="text-center pb-5">Resources</h1>
+    <div className="container">
+      <h1 className="text-center pt-3 py-md-5">Resources</h1>
       <p className="text-center">
         Currently, we use the following venues for our events:
       </p>
-      <section className="row">
-        <div className="col-12 col-md-6">
+      <section className="row pb-md-5">
+        <div className="col-12 col-md-6 mb-3">
           <div className="card">
             <CardImg
               as={Image}
@@ -33,7 +33,7 @@ const ResourcesPage = () => {
             </div>
           </div>
         </div>
-        <div className="col-12 col-md-6">
+        <div className="col-12 col-md-6 mb-3">
           <div className="card">
             <CardImg
               as={Image}

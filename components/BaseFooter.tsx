@@ -7,7 +7,7 @@ const BaseFooter = () => {
     <Container>
       <Nav className="d-flex justify-content-around">
         <Nav.Link disabled>
-          &copy;{new Date().getFullYear()} USA Dance Cincinnati
+          &copy;{new Date().getFullYear()} USA Dance #2006 (Cincinnati, OH)
         </Nav.Link>
       </Nav>
     </Container>

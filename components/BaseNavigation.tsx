@@ -8,16 +8,7 @@ const BaseNavigation = () => {
   return (
     <Navbar bg="dark" variant="dark" expand="md">
       <Container>
-        <Navbar.Brand href="/">
-          {/*<Image
-            src="/logo.png"
-            alt="logo.png"
-            width={60}
-            height={60}
-            className="d-inline-block align-center"
-          />*/}
-          USA Dance #2006 (Cincinnati, OH)
-        </Navbar.Brand>
+        <Navbar.Brand href="/">USA Dance Cincinnati</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-responsive" />
         <Navbar.Collapse id="navbar-responsive" className="justify-content-end">
           <Nav>
