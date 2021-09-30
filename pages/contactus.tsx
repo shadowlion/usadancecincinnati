@@ -7,14 +7,18 @@ const ContactUsPage = () => {
       <ul>
         <li>
           Email us at{" "}
-          <Link href="mailto:usadance2006@gmail.com">
-            usadance2006@gmail.com
+          <Link href="mailto:usadance2006@gmail.com" passHref>
+            <a target="_blank" rel="noreferrer">
+              usadance2006@gmail.com
+            </a>
           </Link>
         </li>
         <li>
           Message us on our{" "}
           <Link href="https://www.facebook.com/usadance2006">
-            Facebook page
+            <a target="_blank" rel="noreferrer">
+              Facebook page
+            </a>
           </Link>
         </li>
       </ul>
