@@ -12,8 +12,8 @@ const BaseFooter = () => {
         <Link href="mailto:usadance2006@gmail.com" passHref>
           <Nav.Link>Questions?</Nav.Link>
         </Link>
-        <Link href="/https://facebook.com" passHref>
-          <Nav.Link>Facebook</Nav.Link>
+        <Link href="https://www.facebook.com/usadance2006" passHref>
+          <Nav.Link target="_blank" rel="noreferrer">Facebook</Nav.Link>
         </Link>
       </Nav>
     </Container>
