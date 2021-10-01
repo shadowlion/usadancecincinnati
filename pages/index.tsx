@@ -1,6 +1,9 @@
 import type { NextPage } from "next";
+import {BoardMember, boardMembers} from "../lib/data";
 
 const HomePage: NextPage = () => {
+  const year = new Date().getFullYear();
+
   return (
     <div className="container">
       <h1 className="text-center py-5">
@@ -10,16 +13,11 @@ const HomePage: NextPage = () => {
         <div className="col-12 col-md-4">
           <h2>Current Board Members:</h2>
           <ul>
-            <li>President - Carol Ward</li>
-            <li>Vice President - Louise Buker</li>
-            <li>Treasurer - Yasha Ogg</li>
-            <li>Secretary - Justin Chiou</li>
-            <li>Member at Large - Katie Jones</li>
-            <li>Member at Large - Joy Ingram</li>
-            <li>Member at Large - Brenda Karr</li>
-            <li>Member at Large - Michelle Weber</li>
-            <li>Member at Large - Jeff Greatorex</li>
-            <li>Member at Large - Greg Howard</li>
+            {boardMembers[String(year)].map(({ role, name }: BoardMember) => (
+              <li key={role}>
+                {role} - {name}
+              </li>
+            ))}
           </ul>
         </div>
       </div>

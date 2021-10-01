@@ -1,16 +1,16 @@
-import Link from "next/link";
-import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 
 const BaseFooter = () => {
+  const year = new Date().getFullYear();
+
   return (
-    <Container>
+    <div className="container">
       <Nav className="d-flex justify-content-around">
         <Nav.Link disabled>
-          &copy;{new Date().getFullYear()} USA Dance #2006 (Cincinnati, OH)
+          &copy;{year} USA Dance #2006 (Cincinnati, OH)
         </Nav.Link>
       </Nav>
-    </Container>
+    </div>
   );
 };
 
