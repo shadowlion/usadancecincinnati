@@ -1,25 +1,42 @@
 import type { NextPage } from "next";
-import {BoardMember, boardMembers} from "../lib/data";
+import Image from "next/image";
+import { BoardMember, boardMembers } from "../lib/data";
 
 const HomePage: NextPage = () => {
   const year = new Date().getFullYear();
+  const now = new Date().getTime();
+  const winterBallDate = new Date("2021-12-11").getTime();
+  console.log(winterBallDate);
 
   return (
-    <div className="container">
-      <h1 className="text-center py-5">
+    <div className="container py-5">
+      <h1 className="text-center mb-5">
         Your connection to Ballroom Dancing in the Tri-State area.
       </h1>
-      <div className="row d-flex justify-content-center">
-        <div className="col-12 col-md-4">
-          <h2>Current Board Members:</h2>
-          <ul>
-            {boardMembers[String(year)].map(({ role, name }: BoardMember) => (
-              <li key={role}>
-                {role} - {name}
-              </li>
-            ))}
-          </ul>
-        </div>
+      <div className="row">
+        <aside className="col-12 col-md-4">
+          <div className="text-center text-md-start">
+            <h2>Current Board Members:</h2>
+            <ul>
+              {boardMembers[String(year)].map(({ role, name }: BoardMember) => (
+                <li key={name}>
+                  {role} - {name}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </aside>
+        <article className="col-12 col-md-8">
+          {winterBallDate > now && (
+            <Image
+              src="/flyer.png"
+              alt="Winter Ball 2021 Flyer"
+              width={400}
+              height={600}
+              layout="responsive"
+            />
+          )}
+        </article>
       </div>
     </div>
   );
