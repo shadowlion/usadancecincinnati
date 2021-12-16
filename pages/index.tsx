@@ -6,7 +6,6 @@ const HomePage: NextPage = () => {
   const year = new Date().getFullYear();
   const now = new Date().getTime();
   const winterBallDate = new Date("2021-12-11").getTime();
-  console.log(winterBallDate);
 
   return (
     <div className="container py-5">
