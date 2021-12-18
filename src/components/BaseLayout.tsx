@@ -9,7 +9,7 @@ const BaseLayout = ({ children }: React.PropsWithChildren<{}>) => {
         <BaseNavigation />
       </header>
       <main className="flex-shrink-0">{children}</main>
-      <footer className="mt-auto py-3 bg-light">
+      <footer className="mt-auto py-3 bg-transparent">
         <BaseFooter />
       </footer>
     </div>
