@@ -1,32 +1,57 @@
 import Link from "next/link";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
 
 const BaseNavigation = () => {
   return (
-    <Navbar bg="dark" variant="dark" expand="md">
-      <Container>
-        <Navbar.Brand href="/">USA Dance Cincinnati</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbar-responsive" />
-        <Navbar.Collapse id="navbar-responsive" className="justify-content-end">
-          <Nav>
-            <Link href="/" passHref>
-              <Nav.Link>Home</Nav.Link>
-            </Link>
-            <Link href="/calendar" passHref>
-              <Nav.Link>Calendar</Nav.Link>
-            </Link>
-            <Link href="/resources" passHref>
-              <Nav.Link>Resources</Nav.Link>
-            </Link>
-            <Link href="/contactus" passHref>
-              <Nav.Link>Contact Us</Nav.Link>
-            </Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <nav className="navbar navbar-expand-lg navbar-light bg-transparent">
+      <div className="container">
+        <Link href="/">
+          <a className="navbar-brand">USA Dance Cincinnati</a>
+        </Link>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <Link href="/" passHref>
+                <a className="nav-link" aria-current="page">
+                  Home
+                </a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/calendar" passHref>
+                <a className="nav-link" aria-current="page">
+                  Calendar
+                </a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/resources" passHref>
+                <a className="nav-link" aria-current="page">
+                  Resources
+                </a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/contactus" passHref>
+                <a className="nav-link" aria-current="page">
+                  Contact Us
+                </a>
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 };
 

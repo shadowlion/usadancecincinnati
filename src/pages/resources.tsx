@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import CardImg from "react-bootstrap/CardImg";
+import GocImg from "../../public/goc.jpeg";
+import MusicHallImg from "../../public/music_hall.jpg";
 
 const ResourcesPage = () => {
   return (
@@ -12,13 +13,10 @@ const ResourcesPage = () => {
       <section className="row pb-md-5">
         <div className="col-12 col-md-6 mb-3">
           <div className="card">
-            <CardImg
-              as={Image}
-              src="/goc.jpeg"
-              alt="Greek Orthodox Church image"
-              width={200}
-              height={200}
-              layout="responsive"
+            <Image
+              className="card-img-top"
+              src={GocImg}
+              alt="image of the greek orthodox church"
             />
             <div className="card-body">
               <h5 className="card-title">
@@ -35,13 +33,10 @@ const ResourcesPage = () => {
         </div>
         <div className="col-12 col-md-6 mb-3">
           <div className="card">
-            <CardImg
-              as={Image}
-              src="/music_hall.jpg"
-              alt="Music Hall image"
-              width={200}
-              height={200}
-              layout="responsive"
+            <Image
+              className="card-img-top"
+              src={MusicHallImg}
+              alt="image of the greek orthodox church"
             />
             <div className="card-body">
               <h5 className="card-title">Cincinnati Music Hall</h5>
