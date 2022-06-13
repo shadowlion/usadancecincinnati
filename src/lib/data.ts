@@ -31,10 +31,6 @@ export const boardMembers: Data = {
     },
     {
       role: "Member at Large",
-      name: "Joy Ingram",
-    },
-    {
-      role: "Member at Large",
       name: "Brenda Karr",
     },
     {
@@ -48,6 +44,10 @@ export const boardMembers: Data = {
     {
       role: "Member at Large",
       name: "Michelle Weber",
+    },
+    {
+      role: "Member at Large",
+      name: "Brynne Menkhaus",
     },
   ],
   "2021": [
