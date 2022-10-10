@@ -105,18 +105,18 @@ export const boardMembers: Data = {
       role: "Treasurer",
       name: "Yasha Ogg",
     },
-    {
-      role: "Secretary",
-      name: "Justin Chiou",
-    },
+    // {
+    //   role: "Secretary",
+    //   name: "Justin Chiou",
+    // },
     {
       role: "Member at Large",
       name: "Chris Ingram",
     },
-    {
-      role: "Member at Large",
-      name: "Joy Ingram",
-    },
+    // {
+    //   role: "Member at Large",
+    //   name: "Joy Ingram",
+    // },
     {
       role: "Member at Large",
       name: "May Seibel",
@@ -125,6 +125,9 @@ export const boardMembers: Data = {
       role: "Member at Large",
       name: "Bree Reynolds",
     },
+    {
+      role: "Member at Large",
+      name: "Brynne Menkhaus",
+    },
   ],
 };
-
