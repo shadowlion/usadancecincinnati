@@ -4,8 +4,8 @@ const BaseNavigation = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-transparent">
       <div className="container">
-        <Link href="/">
-          <a className="navbar-brand">USA Dance Cincinnati</a>
+        <Link href="/" className="navbar-brand">
+          USA Dance Cincinnati
         </Link>
         <button
           className="navbar-toggler"
@@ -21,31 +21,23 @@ const BaseNavigation = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link href="/" passHref>
-                <a className="nav-link" aria-current="page">
-                  Home
-                </a>
+              <Link href="/" className="nav-link">
+                Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/calendar" passHref>
-                <a className="nav-link" aria-current="page">
-                  Calendar
-                </a>
+              <Link href="/calendar" className="nav-link">
+                Calendar
               </Link>
             </li>
-            <li className="nav-item">
-              <Link href="/resources" passHref>
-                <a className="nav-link" aria-current="page">
-                  Resources
-                </a>
+            {/* <li className="nav-item">
+              <Link href="/resources" className="nav-link">
+                Resources
               </Link>
-            </li>
+            </li> */}
             <li className="nav-item">
-              <Link href="/contactus" passHref>
-                <a className="nav-link" aria-current="page">
-                  Contact Us
-                </a>
+              <Link href="/contactus" className="nav-link">
+                Contact Us
               </Link>
             </li>
           </ul>

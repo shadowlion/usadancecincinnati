@@ -23,10 +23,13 @@ const ResourcesPage = () => {
                 Holy Trinity - St. Nicholas Greek Orthodox Church
               </h5>
               <address>7000 Winton Rd, Cincinnati, OH 45224</address>
-              <Link href="https://goo.gl/maps/YTGbnvZZTb1jUb4RA" passHref>
-                <a target="_blank" rel="noreferrer" className="btn btn-primary">
-                  Directions
-                </a>
+              <Link
+                href="https://goo.gl/maps/YTGbnvZZTb1jUb4RA"
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-primary"
+              >
+                Directions
               </Link>
             </div>
           </div>
@@ -41,10 +44,13 @@ const ResourcesPage = () => {
             <div className="card-body">
               <h5 className="card-title">Cincinnati Music Hall</h5>
               <address>1241 Elm St, Cincinnati, OH 45202</address>
-              <Link href="https://goo.gl/maps/F8SbajhF6ayt58sf9" passHref>
-                <a target="_blank" rel="noreferrer" className="btn btn-primary">
-                  Directions
-                </a>
+              <Link
+                href="https://goo.gl/maps/F8SbajhF6ayt58sf9"
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-primary"
+              >
+                Directions
               </Link>
             </div>
           </div>
