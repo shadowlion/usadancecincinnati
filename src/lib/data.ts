@@ -130,4 +130,42 @@ export const boardMembers: Data = {
       name: "Brynne Menkhaus",
     },
   ],
+  "2023": [
+    {
+      role: "President",
+      name: "Justin Chiou",
+    },
+    {
+      role: "Vice President",
+      name: "Brenda Karr",
+    },
+    {
+      role: "Treasurer",
+      name: "Yasha Ogg",
+    },
+    {
+      role: "Member at Large",
+      name: "Chris Ingram",
+    },
+    {
+      role: "Member at Large",
+      name: "May Seibel",
+    },
+    {
+      role: "Member at Large",
+      name: "Bree Reynolds",
+    },
+    {
+      role: "Member at Large",
+      name: "Brynne Menkhaus",
+    },
+    {
+      role: "Member at Large",
+      name: "Linda Graviss",
+    },
+    {
+      role: "Member at Large",
+      name: "Nicholas Andrews",
+    },
+  ],
 };
