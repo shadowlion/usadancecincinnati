@@ -168,4 +168,17 @@ export const boardMembers: Data = {
       name: "Nicholas Andrews",
     },
   ],
+  "2024": [
+    { role: "President", name: "Brenda Karr" },
+    { role: "Vice President", name: "May Seibel" },
+    { role: "Treasurer", name: "Linda Graviss" },
+    { role: "Secretary", name: "Chris Ingram" },
+    { role: "Member at Large", name: "Jerry Campbell" },
+    { role: "Member at Large", name: "Jacob Conner" },
+    { role: "Member at Large", name: "Mary Lyn Fledderman" },
+    { role: "Member at Large", name: "Bryan Hyden" },
+    { role: "Member at Large", name: "Stephen Kaiser" },
+    { role: "Member at Large", name: "Brynne Menkhaus" },
+    { role: "Member at Large", name: "Yasha Ogg" },
+  ],
 };
