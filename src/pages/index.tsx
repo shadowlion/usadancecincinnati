@@ -2,6 +2,10 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import { BoardMember, boardMembers } from "../lib/data";
 
+function getBoardMembers(year: number) {
+  return String(year) in boardMembers ? boardMembers[String(year)] : [];
+}
+
 const HomePage: NextPage = () => {
   const year = new Date().getFullYear();
   const now = new Date().getTime();
@@ -17,7 +21,7 @@ const HomePage: NextPage = () => {
           <div className="text-center text-md-start">
             <h2>Current Board Members:</h2>
             <ul>
-              {boardMembers[String(year)].map(({ role, name }: BoardMember) => (
+              {getBoardMembers(year).map(({ role, name }: BoardMember) => (
                 <li key={name}>
                   {role} - {name}
                 </li>
